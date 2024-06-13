@@ -1,14 +1,12 @@
 package edu.meninocoiso.syntax.project;
 
-import java.util.Locale;
+import edu.meninocoiso.syntax.localization.Localization;
+
 import java.util.Scanner;
 
 public class BankAccount {
     public static void main(String[] args) {
-        Locale localeBR = new Locale.Builder().setLanguage("pt").setRegion("BR").build();
-        // ou: Locale localeBR = Locale.of("pt", "BR");
-
-        Scanner scanner = new Scanner(System.in).useLocale(localeBR);
+        Scanner scanner = new Scanner(System.in).useLocale(Localization.BR);
 
         System.out.println("Digite o número da sua conta: ");
         int accountNumber = scanner.nextInt(); // Exemplo: 1021

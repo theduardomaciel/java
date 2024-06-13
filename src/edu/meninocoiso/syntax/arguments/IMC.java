@@ -1,6 +1,7 @@
 package edu.meninocoiso.syntax.arguments;
 
-import java.util.Locale;
+import edu.meninocoiso.syntax.localization.Localization;
+
 import java.util.Map;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ import java.util.Hashtable;
 
 public class IMC {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+        Scanner scanner = new Scanner(System.in).useLocale(Localization.BR);
 
         System.out.println("Digite o seu peso (em kg): ");
         double peso = scanner.nextDouble();
