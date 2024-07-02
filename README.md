@@ -17,7 +17,7 @@ O objetivo principal é construir uma base sólida em Java, abrangendo desde con
 
 ## 🧠 Princípios
 
-1.  Buscar aprender os conceitos-base para evitar dificuldades futuras com a linguagem após o aprofundamento dos conhecimentos.
+1. Buscar aprender os conceitos-base para evitar dificuldades futuras com a linguagem após o aprofundamento dos conhecimentos.
 2. Aprender a utilizar as ferramentas de desenvolvimento da linguagem.
 3. Aprender a utilizar as bibliotecas e frameworks mais utilizados na linguagem.
 
