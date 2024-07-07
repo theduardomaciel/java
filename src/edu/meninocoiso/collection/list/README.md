@@ -113,3 +113,5 @@ Exercícios:
 [1] "Collections in Java Tutorial." DigitalOcean Community. Disponível em: https://www.digitalocean.com/community/tutorials/collections-in-java-tutorial.
 
 [2] "Java™ Platform, Standard Edition 17 API Specification - Class List." Oracle. Disponível em: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html.
+
+[3] "Collections Java API" Camila Cavalcante. Disponível em: https://github.com/cami-la/collections-java-api-2023
