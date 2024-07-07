@@ -1,4 +1,4 @@
-package edu.meninocoiso.collection.list.basicoperations.exercise2;
+package edu.meninocoiso.collection.list.basic.exercise2;
 
 import java.util.ArrayList;
 import java.util.List;

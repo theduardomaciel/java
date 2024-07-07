@@ -1,12 +1,12 @@
-package edu.meninocoiso.collection.list.basicoperations.exercise1;
+package edu.meninocoiso.collection.list.basic.exercise1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TasksList {
+public class TaskList {
 	private List<Task> tasks;
 
-	public TasksList() {
+	public TaskList() {
 		tasks = new ArrayList<>();
 	}
 
@@ -49,7 +49,7 @@ public class TasksList {
 	}
 
 	public static void main(String[] args) {
-		TasksList tasksList = new TasksList();
+		TaskList tasksList = new TaskList();
 		System.out.println(tasksList.toString());
 
 		tasksList.addTask("Task 1");
