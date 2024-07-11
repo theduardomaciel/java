@@ -1,6 +1,9 @@
 package edu.meninocoiso.oop.projects.project2;
 
-import java.util.List;
+import edu.meninocoiso.oop.projects.project2.domain.Bank;
+import edu.meninocoiso.oop.projects.project2.domain.CheckingAccount;
+import edu.meninocoiso.oop.projects.project2.domain.Client;
+import edu.meninocoiso.oop.projects.project2.domain.SavingsAccount;
 
 public class Main {
 	private static void separator() {

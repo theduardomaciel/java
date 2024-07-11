@@ -1,4 +1,4 @@
-package edu.meninocoiso.oop.projects.project2;
+package edu.meninocoiso.oop.projects.project2.domain;
 
 public class SavingsAccount extends Account {
 	public SavingsAccount(Client client) {

@@ -1,4 +1,4 @@
-package edu.meninocoiso.oop.projects.project2;
+package edu.meninocoiso.oop.projects.project2.domain;
 
 import edu.meninocoiso.oop.projects.project2.data.TransactionType;
 

@@ -1,8 +1,6 @@
 package edu.meninocoiso.oop.projects.project2.data;
 
-import edu.meninocoiso.oop.projects.project2.Account;
-
-import java.util.Optional;
+import edu.meninocoiso.oop.projects.project2.domain.Account;
 
 public interface IAccount {
 	/**

@@ -1,4 +1,4 @@
-package edu.meninocoiso.oop.projects.project2;
+package edu.meninocoiso.oop.projects.project2.domain;
 
 import java.util.ArrayList;
 import java.util.List;
