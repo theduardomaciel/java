@@ -99,31 +99,22 @@ class Questionary {
 			// 4. Obtemos a letra correspondente à opção correta
 			// Exemplo: Se a opção correta for a terceira, a letra correspondente será 'C'
 			
-			AtomicInteger index = new AtomicInteger();
-			// Obs.: Utilizamos o 'AtomicInteger', pois variáveis utilizadas em expressões lambda devem ser efetivamente 'final'
-			// Como precisamos incrementar o valor de 'index' a cada iteração, utilizamos um AtomicInteger para contornar essa limitação
+			String correctAnswer = null;
+			int index = 0;
+			for (Map.Entry<String, Boolean> option : question.getOptions().entrySet()) {
+				if (option.getValue()) {
+					correctAnswer = String.valueOf((char) ('A' + index));
+					break;
+				}
+				index++;
+			}
 			
-			return question.getOptions().entrySet().stream()
-					.filter(Map.Entry::getValue)
-					.map(entry -> String.valueOf((char) ('A' + index.get())))
-					.findFirst()
-					.orElse("");
+			return correctAnswer;
 			
-			// Alternativamente, poderíamos utilizar um 'for' tradicional para obter a letra correspondente à opção correta
+			// Alternativamente, poderíamos utilizar alguns outros métodos para obter a letra correspondente à opção correta
 			// Portanto, seguem alguns exemplos:
 			
-			// 1. Utilizando um 'for' tradicional
-			// String correctAnswer = null;
-			// int index = 0;
-			// for (Map.Entry<String, Boolean> option : question.getOptions().entrySet()) {
-			//     if (option.getValue()) {
-			//         correctAnswer = String.valueOf((char) ('A' + index);
-			//         break;
-			//     }
-			//     index++;
-			// }
-			
-			// 2. Utilizando um 'for' tradicional com 'forEachRemaining'
+			// 1. Utilizando um 'for' tradicional com 'forEachRemaining'
 			// AtomicReference<String> correctAnswer = new AtomicReference<>("");
 			// AtomicInteger index = new AtomicInteger();
 			// question.getOptions().entrySet().iterator().forEachRemaining(option -> {
@@ -133,7 +124,7 @@ class Questionary {
 			//     index.getAndIncrement();
 			// });
 			
-			// 3. Utilizando uma segunda stream para obter a letra correspondente à opção correta
+			// 2. Utilizando uma segunda stream para obter a letra correspondente à opção correta
 			// AtomicInteger index = new AtomicInteger();
 			// return question.getOptions().entrySet().stream()
 			//      .filter(Map.Entry::getValue)
@@ -144,6 +135,14 @@ class Questionary {
 			//  	.findFirst()
 			//  	.orElse("");
 			//	}
+			
+			// 3. Caso saibamos a resposta do usuário (answer), podemos utilizar um método mais simples
+			//  question.getOptions().keySet().stream()
+			//		.skip(answer.charAt(0) - 'A')
+			//		.findFirst()
+			//		.map(question.getOptions()::get)
+			//		.orElse(false);
+			// TODO: testar simplificação da IA: String.valueOf((char) ('A' + question.getOptions().keySet().stream().toList().indexOf(userAnswer)));
 		}
 	}
 	
